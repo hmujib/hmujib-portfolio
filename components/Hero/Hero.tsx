@@ -10,9 +10,7 @@ const HeroText = styled.h1`
   font-weight: 700;
 `
 
-const BlueText = styled(HeroText)`
-  display: inline-block;
-  font-size: 1em;
+const BlueText = styled.span`
   color: #1B93AD;
 `
 
