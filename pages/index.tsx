@@ -9,7 +9,6 @@ const Index = () => {
       <Hero />
 
       {data.map((project) => {
-        console.log(project)
         return (
           <ProjectCard
             key={project.name}
@@ -18,7 +17,7 @@ const Index = () => {
             projectImage={project.previewImage} />
         )
       })}
-      
+
     </Container>
   )
 }

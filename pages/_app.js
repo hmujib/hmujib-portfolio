@@ -2,6 +2,7 @@
 import { Fragment } from 'react'
 
 import Head from 'next/head'
+import "../styles/globals.scss"
 import { ThemeProvider } from 'styled-components'
 
 // these lines are used to pass the globals.scss file as a Theme to styled-components
