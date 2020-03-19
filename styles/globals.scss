@@ -1,0 +1,14 @@
+$mobile: '768px';
+
+html, body {
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}

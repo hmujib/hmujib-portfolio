@@ -4,10 +4,10 @@ import styled from "styled-components"
 import SocialIcons from "../SocialIcons"
 
 const HeroText = styled.h1`
+  margin: 0;
   font-family: Roboto;
   font-size: 2em;
   font-weight: 700;
-  margin: 0;
 `
 
 const BlueText = styled(HeroText)`

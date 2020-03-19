@@ -13,7 +13,7 @@ const ContentContainer = styled.div`
   margin: 0 auto;
   padding: 3rem;
 
-  @media(max-width: 768px) {
+  @media(max-width: ${props => props.theme.mobile}) {
     padding: 1rem;
   }
 `
@@ -29,10 +29,10 @@ const Footer = styled.div`
 `
 
 const FooterText = styled.p`
+  margin: 0;
   font-family: Roboto;
   font-size: .75rem;
   color: #ADADAD;
-  margin: 0;
 `
 
 const FooterLink = styled.a`

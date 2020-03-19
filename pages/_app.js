@@ -2,21 +2,10 @@
 import { Fragment } from 'react'
 
 import Head from 'next/head'
-import { createGlobalStyle } from 'styled-components'
+import { ThemeProvider } from 'styled-components'
 
-const GlobalStyle = createGlobalStyle`{
-  html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  html, body {
-    margin: 0px;
-    overflow-x: hidden;
-  }
-}
-`
+// these lines are used to pass the globals.scss file as a Theme to styled-components
+const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!../styles/globals.scss');
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -25,8 +14,9 @@ function MyApp({ Component, pageProps }) {
         <link href='https://fonts.googleapis.com/css?family=Roboto&display=swap' rel='stylesheet'></link>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet"></link>
       </Head>
-      <GlobalStyle />
-      <Component {...pageProps} />
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </Fragment>
   )
 }

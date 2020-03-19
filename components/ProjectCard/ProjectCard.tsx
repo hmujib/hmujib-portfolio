@@ -8,7 +8,7 @@ const ProjectContainer = styled.div`
   flex-wrap: wrap;
   padding: 5rem 0;
 
-  @media(max-width: 768px) {
+  @media(max-width: ${props => props.theme.mobile}) {
     flex-direction: column;
   }
 `
@@ -17,14 +17,14 @@ const Panel = styled.div`
   width: 50%;
   height: 100%;
 
-  @media(max-width: 768px) {
+  @media(max-width: ${props => props.theme.mobile}) {
     width: 100%;
   }
 `
 
 const StyledText = styled.h2`
-  font-family: 'Open Sans', sans-serif;
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
 `
 
 const ProjectTitle = styled(StyledText)`
@@ -43,7 +43,7 @@ const ProjectImage = styled.img`
   width: 100%;
   height: 100%;
 
-  @media(max-width: 768px) {
+  @media(max-width: ${props => props.theme.mobile}) {
     padding-top: 1rem;
   }
 `
