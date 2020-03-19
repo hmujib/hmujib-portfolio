@@ -5,6 +5,12 @@ import Head from 'next/head'
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`{
+  html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
   html, body {
     margin: 0px;
     overflow-x: hidden;
@@ -17,6 +23,7 @@ function MyApp({ Component, pageProps }) {
     <Fragment>
       <Head>
         <link href='https://fonts.googleapis.com/css?family=Roboto&display=swap' rel='stylesheet'></link>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet"></link>
       </Head>
       <GlobalStyle />
       <Component {...pageProps} />
