@@ -1,13 +1,46 @@
 import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
+import styled from 'styled-components'
+import data from '../../data/projects.json'
+
 import Container from "../../components/Container"
-const Project = () => {
+import { GetServerSideProps } from 'next'
+
+
+
+const ProjectTitle = styled.h2`
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: -2px;
+  cursor: pointer;
+  text-align: center;
+`
+
+const Project = (props) => {
   const router = useRouter()
-  const { project } = router.query
+  const urlSlug = router.query.project
+
+  let filteredData = props.data.find((project: any) => {
+    if(project.slug === String(urlSlug)) {
+      return project
+    }
+  })
+
+  const [pageData, updatePageData] = useState(filteredData)
+
   return (
     <Container>
-      <p>Project: {project}</p>
+      <ProjectTitle>{pageData.name}</ProjectTitle>
     </Container>
   )
+}
+
+export const getServerSideProps: GetServerSideProps = async ctx => {
+  return {
+    props: { data }
+  }
 }
 
 export default Project
