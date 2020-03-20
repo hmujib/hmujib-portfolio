@@ -11,7 +11,7 @@ const HeroText = styled.h1`
 `
 
 const BlueText = styled.span`
-  color: #1B93AD;
+  color: ${props => props.theme.blue};
 `
 
 const HorizontalLine = styled.div`

@@ -14,7 +14,8 @@ const Index = () => {
             key={project.name}
             projectTitle={project.name}
             projectDetails={project.details}
-            projectImage={project.previewImage} />
+            projectImage={project.previewImage} 
+            slug={project.slug} />
         )
       })}
 

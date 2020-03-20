@@ -40,7 +40,7 @@ const FooterLink = styled.a`
   text-decoration: none;
 
   &:hover {
-    color: #1B93AD;
+    color: ${props => props.theme.blue};
   }
 `
 

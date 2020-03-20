@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import Link from "next/link"
 
 const ProjectContainer = styled.div`
   width: 100%;
@@ -16,7 +17,7 @@ const ProjectContainer = styled.div`
 const Panel = styled.div`
   width: 50%;
   height: 100%;
-
+  
   @media(max-width: ${props => props.theme.mobile}) {
     width: 100%;
   }
@@ -28,9 +29,16 @@ const StyledText = styled.h2`
 `
 
 const ProjectTitle = styled(StyledText)`
+  display: inline-block;
   font-weight: 600;
   font-size: 2rem;
   letter-spacing: -2px;
+  cursor: pointer;
+
+  &:hover {
+    color: ${props => props.theme.blue};
+    transition: .2s;
+  }
 `
 
 const ProjectDetails = styled(StyledText)`
@@ -42,6 +50,7 @@ const ProjectDetails = styled(StyledText)`
 const ProjectImage = styled.img`
   width: 100%;
   height: 100%;
+  cursor: pointer;
 
   @media(max-width: ${props => props.theme.mobile}) {
     padding-top: 1rem;
@@ -52,17 +61,22 @@ interface Props {
   projectTitle: string
   projectDetails: string
   projectImage: string
+  slug: string
 }
 
 const ProjectCard = (props: Props) => {
   return (
     <ProjectContainer>
       <Panel>
-        <ProjectTitle>{props.projectTitle}</ProjectTitle>
+        <Link href="/[project]" as={`/${props.slug}`}>
+          <ProjectTitle>{props.projectTitle}</ProjectTitle>
+        </Link>
         <ProjectDetails>{props.projectDetails}</ProjectDetails>
       </Panel>
       <Panel>
-        <ProjectImage src={props.projectImage} />
+        <Link href="/[project]" as={`/${props.slug}`}>
+          <ProjectImage src={props.projectImage} />
+        </Link>
       </Panel>
     </ProjectContainer>
   )

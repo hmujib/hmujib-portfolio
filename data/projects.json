@@ -2,11 +2,13 @@
   {
     "name": "Don Julio Rebuild",
     "details": "Client - 2020",
-    "previewImage": "/donjulio-preview.png"
+    "previewImage": "/donjulio-preview.png",
+    "slug": "donjulio-rebuild"
   },
   {
     "name": "Oban Whisky",
     "details": "Client - 2020",
-    "previewImage": "/oban-preview.png"
+    "previewImage": "/oban-preview.png",
+    "slug": "obanwhisky"
   }
 ]
