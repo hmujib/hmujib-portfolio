@@ -1,5 +1,4 @@
-import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import styled from 'styled-components'
 import data from '../../data/projects.json'
 
@@ -14,16 +13,12 @@ const ProjectTitle = styled.h2`
   font-weight: 600;
   font-size: 2rem;
   letter-spacing: -2px;
-  cursor: pointer;
   text-align: center;
 `
 
 const Project = (props) => {
-  const router = useRouter()
-  const urlSlug = router.query.project
-
-  let filteredData = props.data.find((project: any) => {
-    if(project.slug === String(urlSlug)) {
+  let filteredData = data.find((project: any) => {
+    if(project.slug === props.query) {
       return project
     }
   })
@@ -38,8 +33,9 @@ const Project = (props) => {
 }
 
 export const getServerSideProps: GetServerSideProps = async ctx => {
+  let query = ctx.query.project
   return {
-    props: { data }
+    props: { query }
   }
 }
 
