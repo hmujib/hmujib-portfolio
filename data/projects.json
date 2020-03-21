@@ -1,30 +1,32 @@
 [
   {
-    "name": "Don Julio Rebuild",
+    "name": "Buchanan's Whisky Rebuild",
     "details": "Client - 2020",
     "previewImage": "/donjulio-preview.png",
-    "slug": "donjulio-rebuild",
+    "slug": "buchanans-rebuild",
     "article": {
       "picture-one": "",
-      "paragraph-one-title": "Title",
-      "paragraph-one": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "paragraph-one-title": "Why?",
+      "paragraph-one": "Buchanan’s Whisky was originally a dark site with deep shades of red and green. It was due for a much needed overhaul. The client wanted a brighter, more cheerful site while still following the brand color scheme. Important things to preserve were old content and SEO data.",
       "picture-two": "",
-      "paragraph-two-title": "Title",
-      "paragraph-two": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "paragraph-two-title": "The Present",
+      "paragraph-two": "A designer came up with a much cleaner mockup that featured sliders, recipe grids, and much brighter colors. I decided to use NextJS because the client was concerned about SEO. NextJS makes using React quite SEO friendly right out the box. Components and pages are styled through SCSS stylesheets and content is pulled from a JSON file. MobX is also used for state management.",
+      "paragraph-three-title": "Takeaways",
+      "paragraph-three": "While the project is still in the review phase, I wanted to include it here because it was one of my first full stack projects. I learned a lot about working with third parties and a lot about NextJS. With the help of legal teams, copyrights, designers, and brand managers, we were able to rebuild the site. I’m excited for the future as there are a lot of plans with which way the site can go!"
     }
   },
   {
-    "name": "Oban Whisky",
-    "details": "Client - 2020",
+    "name": "Join the Pact",
+    "details": "Client - 2019",
     "previewImage": "/oban-preview.png",
-    "slug": "obanwhisky",
+    "slug": "jointhepact",
     "article": {
       "picture-one": "",
-      "paragraph-one-title": "Title",
-      "paragraph-one": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "paragraph-one-title": "Mission",
+      "paragraph-one": "The client wanted a site where users worldwide can pledge to never drink and drive. It was definitely an interesting project and I enjoyed it because I felt as if I was making a difference. As for the technical challenges, the site would be available in many different locales and it would be able to be embedded on any of the clients’ other sites. The site would also feature a map that would show how many pledges each country had.",
       "picture-two": "",
-      "paragraph-two-title": "Title",
-      "paragraph-two": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "paragraph-two-title": "Technical Challenges",
+      "paragraph-two": "The hardest part of the site was having one template page for many different locales. The dev team decided to use Gulp and we had a JSON object for each locale’s content. Through this method, we were able to achieve the goal of having one skeleton for every locale."
     }
   }
 ]

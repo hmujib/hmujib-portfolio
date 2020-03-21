@@ -18,7 +18,7 @@ const ProjectTitle = styled.h2`
 
 const ParagraphTitle = styled.h3`
   font-family: 'Roboto', sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 400;
 `
 
@@ -30,7 +30,8 @@ const Picture = styled.img`
 `
 
 const ArticleText = styled.p`
-  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
 `
 
 const Project = (props) => {
@@ -53,11 +54,11 @@ const Project = (props) => {
       {
         Object.keys(pageData.article).map(element => {
           if(element.includes("picture")) {
-            return <Picture></Picture>
+            return <Picture key={element} />
           } else if(element.includes("title")) {
-            return <ParagraphTitle>{pageData.article[element]}</ParagraphTitle>
+            return <ParagraphTitle key={element}>{pageData.article[element]}</ParagraphTitle>
           } else {
-            return <ArticleText>{pageData.article[element]}</ArticleText>
+            return <ArticleText key={element}>{pageData.article[element]}</ArticleText>
           }
         })
       }
