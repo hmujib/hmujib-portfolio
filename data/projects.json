@@ -7,12 +7,10 @@
     "article": {
       "picture-one": "",
       "paragraph-one-title": "Why?",
-      "paragraph-one": "Buchanan’s Whisky was originally a dark site with deep shades of red and green. It was due for a much needed overhaul. The client wanted a brighter, more cheerful site while still following the brand color scheme. Important things to preserve were old content and SEO data.",
+      "paragraph-one": "Buchanan’s Whisky is one of the most famous Scotch whisky brands in the world. The original site featured information about the Buchanan’s family, their whisky line, cocktails, and whisky culture. There was a ton of interesting content but the site’s styles were outdated and dark. The client wanted something a little bit more bright, colorful, and modern. It was decided that some site content would be re-used, but there would be a change in design. The rebuilt site would feature the same interesting site content in a more concise and visually appealing way.",
       "picture-two": "",
-      "paragraph-two-title": "The Present",
-      "paragraph-two": "A designer came up with a much cleaner mockup that featured sliders, recipe grids, and much brighter colors. I decided to use NextJS because the client was concerned about SEO. NextJS makes using React quite SEO friendly right out the box. Components and pages are styled through SCSS stylesheets and content is pulled from a JSON file. MobX is also used for state management.",
-      "paragraph-three-title": "Takeaways",
-      "paragraph-three": "While the project is still in the review phase, I wanted to include it here because it was one of my first full stack projects. I learned a lot about working with third parties and a lot about NextJS. With the help of legal teams, copyrights, designers, and brand managers, we were able to rebuild the site. I’m excited for the future as there are a lot of plans with which way the site can go!"
+      "paragraph-two-title": "Build",
+      "paragraph-two": "I was very excited to start working on the build after receiving the designs. The client mentioned how important SEO was so after some research I decided to go with NextJS. I have used NextJS before but have been using much more after seeing companies like Netflix, Twitch, and Hulu use the framework as well. Using NextJS, I was able to focus on coding features rather than configuration. Server-side rendering was working right out of the box and components like ‘next/head’ make writing SEO much easier. Outside of NextJS, I decided to use SCSS for styling and MobX for state management."
     }
   },
   {

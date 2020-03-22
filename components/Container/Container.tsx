@@ -11,7 +11,7 @@ const ContentContainer = styled.div`
   max-width: 1200px;
   min-height: 100%;
   margin: 0 auto;
-  padding: 3rem;
+  padding: ${props => props.size };
 
   @media(max-width: ${props => props.theme.mobile}) {
     padding: 1rem;
@@ -47,7 +47,7 @@ const FooterLink = styled.a`
 const Container = (props) => {
   return (
     <Main>
-      <ContentContainer>
+      <ContentContainer size={props.layout === "homepage" ? "3rem 10rem" : "3rem"}>
         {props.children}
       </ContentContainer>
       <Footer>

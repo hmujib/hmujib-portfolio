@@ -8,11 +8,12 @@ import { GetServerSideProps } from 'next'
 
 
 const ProjectTitle = styled.h2`
+  margin: 0;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 2rem;
   letter-spacing: -2px;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   text-align: center;
 `
 
@@ -32,6 +33,7 @@ const Picture = styled.img`
 const ArticleText = styled.p`
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
+  line-height: 2rem;
 `
 
 const Project = (props) => {
@@ -48,7 +50,7 @@ const Project = (props) => {
   })
 
   return (
-    <Container>
+    <Container layout="homepage">
       <ProjectTitle>{pageData.name}</ProjectTitle>
 
       {
