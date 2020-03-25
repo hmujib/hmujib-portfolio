@@ -27,7 +27,6 @@ const Picture = styled.img`
   width: 100%;
   height: 600px;
   border: 0;
-  background-color: snow;
 `
 
 const ArticleText = styled.p`
@@ -56,7 +55,7 @@ const Project = (props) => {
       {
         Object.keys(pageData.article).map(element => {
           if(element.includes("picture")) {
-            return <Picture key={element} />
+            return <Picture key={element} src={pageData.article[element]}/>
           } else if(element.includes("title")) {
             return <ParagraphTitle key={element}>{pageData.article[element]}</ParagraphTitle>
           } else {

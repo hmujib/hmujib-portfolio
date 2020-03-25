@@ -5,7 +5,7 @@
     "previewImage": "/buchanans-preview.png",
     "slug": "buchanans-rebuild",
     "article": {
-      "picture-one": "",
+      "picture-one": "/buchanans-preview.png",
       "paragraph-one-title": "The Past",
       "paragraph-one": "Buchanan’s Whisky is one of the most famous Scotch whisky brands in the world. As one of the leaders in Scotch Whisky, they needed an informative and modern site. The original site was starting to feel outdated in both layout and design. As for site content, the original site featured information about the Buchanan’s family, their whiskies, whisky culture, and signature drinks. The site content was informative and engaging so it was decided that some site content would be re-used. The rebuilt site would feature the same engaging site content in a more concise and visually appealing way.",
       "picture-two": "",
@@ -16,10 +16,10 @@
   {
     "name": "Join the Pact",
     "details": "Client - 2019",
-    "previewImage": "jointhepact-preview.png",
+    "previewImage": "/jointhepact-preview.png",
     "slug": "jointhepact",
     "article": {
-      "picture-one": "",
+      "picture-one": "/jointhepact-preview.png",
       "paragraph-one-title": "Mission",
       "paragraph-one": "Join the Pact is a global mission to reduce accidents and injuries caused by drunk driving. The site would feature information about the effects of alcohol and the consequences of driving impaired. Users who visit the site can pledge never to drink and drive. Their pledge is recorded and then displayed on a campaign total and an interactive map.I was very excited about taking on this project as I felt that I was working on something that would make a difference. There was also a decent amount of press/publicity around the campaign so I was ready for the challenge and exposure.",
       "picture-two": "",
