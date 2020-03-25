@@ -2,29 +2,29 @@
   {
     "name": "Buchanan's Whisky Rebuild",
     "details": "Client - 2020",
-    "previewImage": "/donjulio-preview.png",
+    "previewImage": "/buchanans-preview.png",
     "slug": "buchanans-rebuild",
     "article": {
       "picture-one": "",
-      "paragraph-one-title": "Why?",
-      "paragraph-one": "Buchanan’s Whisky is one of the most famous Scotch whisky brands in the world. The original site featured information about the Buchanan’s family, their whisky line, cocktails, and whisky culture. There was a ton of interesting content but the site’s styles were outdated and dark. The client wanted something a little bit more bright, colorful, and modern. It was decided that some site content would be re-used, but there would be a change in design. The rebuilt site would feature the same interesting site content in a more concise and visually appealing way.",
+      "paragraph-one-title": "The Past",
+      "paragraph-one": "Buchanan’s Whisky is one of the most famous Scotch whisky brands in the world. As one of the leaders in Scotch Whisky, they needed an informative and modern site. The original site was starting to feel outdated in both layout and design. As for site content, the original site featured information about the Buchanan’s family, their whiskies, whisky culture, and signature drinks. The site content was informative and engaging so it was decided that some site content would be re-used. The rebuilt site would feature the same engaging site content in a more concise and visually appealing way.",
       "picture-two": "",
-      "paragraph-two-title": "Build",
-      "paragraph-two": "I was very excited to start working on the build after receiving the designs. The client mentioned how important SEO was so after some research I decided to go with NextJS. I have used NextJS before but have been using much more after seeing companies like Netflix, Twitch, and Hulu use the framework as well. Using NextJS, I was able to focus on coding features rather than configuration. Server-side rendering was working right out of the box and components like ‘next/head’ make writing SEO much easier. Outside of NextJS, I decided to use SCSS for styling and MobX for state management."
+      "paragraph-two-title": "The Present",
+      "paragraph-two": "I was very excited to start working on the build after receiving the designs. The new site featured sliders, recipe grids, and even a history timeline (that was sadly eventually scrapped). I ended up deciding that I would be using parts of the MERN tech stack. The client also emphasized good SEO so I decided on using NextJS. NextJS is a React framework that offers server-side rendering and easy SEO implementation for React applications. I have used NextJS before but have been using much more after seeing companies like Netflix, Twitch, and Hulu use the framework as well. Thanks to NextJS, I was able to focus on coding features rather than configuration. Server-side rendering was working right out of the box and components like ‘next/head’ made writing SEO much easier. Outside of NextJS, I decided to use SCSS for styling and MobX for state management."
     }
   },
   {
     "name": "Join the Pact",
     "details": "Client - 2019",
-    "previewImage": "/oban-preview.png",
+    "previewImage": "jointhepact-preview.png",
     "slug": "jointhepact",
     "article": {
       "picture-one": "",
       "paragraph-one-title": "Mission",
-      "paragraph-one": "The client wanted a site where users worldwide can pledge to never drink and drive. It was definitely an interesting project and I enjoyed it because I felt as if I was making a difference. As for the technical challenges, the site would be available in many different locales and it would be able to be embedded on any of the clients’ other sites. The site would also feature a map that would show how many pledges each country had.",
+      "paragraph-one": "Join the Pact is a global mission to reduce accidents and injuries caused by drunk driving. The site would feature information about the effects of alcohol and the consequences of driving impaired. Users who visit the site can pledge never to drink and drive. Their pledge is recorded and then displayed on a campaign total and an interactive map.I was very excited about taking on this project as I felt that I was working on something that would make a difference. There was also a decent amount of press/publicity around the campaign so I was ready for the challenge and exposure.",
       "picture-two": "",
       "paragraph-two-title": "Technical Challenges",
-      "paragraph-two": "The hardest part of the site was having one template page for many different locales. The dev team decided to use Gulp and we had a JSON object for each locale’s content. Through this method, we were able to achieve the goal of having one skeleton for every locale."
+      "paragraph-two": "The frontend of the site was relatively simple, but the backend was a little complex. Most of the technical design went into the database planning. It was important to have a strong database plan because this site was primarily about displaying the pledge data and getting new users to pledge. The client mentioned that they had a goal of around ~85 million pledges. After careful consideration and a lot of sandbox tests, the techstack that was decided on was SQL, Gulp, and Nunjucks. One of the client’s main requests was to have a streamlined way to add locales at any time. To accomplish this, a template was created and all site content/translations were stored in a JSON file. When the site would be built (using Gulp), each locale would be made using the content in the JSON file. Now, whenever the client wants to add a locale, it is as simple as adding the content to the JSON file and running the build command. One of the other requirements was creating a backend portal for the client where they are able to validate, edit, or enter pledges. I wish I could talk more about the backend portal (it was a large part of the project) but since it isn’t consumer facing I can’t say too much. This was one of my favorite projects and took up a lot of my time in 2019. As of writing, the site has 22 million pledges and over 20 locales."
     }
   }
 ]
