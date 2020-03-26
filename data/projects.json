@@ -1,5 +1,22 @@
 [
   {
+    "name": "Humza Mujib - Portfolio",
+    "details": "Personal - 2020",
+    "previewImage": "portfolio-preview.png",
+    "slug": "portfolio",
+    "article": {
+      "picture-one": "/portfolio-preview.png",
+      "paragraph-one-title": "Why?",
+      "paragraph-one": "I made my first two portfolios/personal sites very early in my programming career. I made the first one right after I graduated college. It was a very basic site using plain HTML/CSS/JS. I took the knowledge I learned from my web development specialization and made it in about a week. The site had a little bit of information about me and my accomplishments in college. It helped me land my first job. The second version of my portfolio was a complete overhaul using Gatsby. I was starting to figure out React and decided to re-do my portfolio for practice. I remember at the time I thought it was so amazing but looking back at it now I can see how much I’ve grown as a developer. The site had very little information about me and links to my projects.",
+      "paragraph-two-title": "Introducing: Version 3.0",
+      "paragraph-two": "The site that you’re currently on is the latest version! With over a year of experience, I’ve learned so much about SDLC (Software Development Lifecycle) and decided to take this version quite seriously.",
+      "paragraph-three-title": "Design",
+      "paragraph-three": "I decided to use Figma to create the designs. One of the designers I work with uses Figma when sending me wireframes and I’ve grown to enjoy using the software. It allows me to design components and reuse them throughout my project. It really allowed me to “think in React” straight from the design phase. I had a few different mockups but in the end I decided that I wanted something simple that would speak for itself. For now, the project would be a collection of my work that would link out to a page that further describes the project, similar to a blog.",
+      "paragraph-four-title": "Build",
+      "paragraph-four": "I decided to use NextJS for this project as SEO and server-side rendering were a must. NextJS is a React framework that offers server-side rendering and easy SEO implementation (along with a lot of other things) for React applications. It let me focus on everything but configuration. Trust me, you have to try out NextJS, it will change your life! I also decided to ditch stylesheets and move onto styled-components. I can confidently say that I love style-components and plan on using it much more in the future. No more class name bugs, very easy conditional styles, themes, and so much more. Aside from that, the site also has a dynamic project page, no class based components/lifecycle methods, and server-side rendering. I thoroughly enjoyed coding this small project and plan on using this tech stack much more in the future. Thanks for checking out my site!"
+    }
+  },
+  {
     "name": "Buchanan's Whisky Rebuild",
     "details": "Client - 2020",
     "previewImage": "/buchanans-preview.png",
@@ -8,7 +25,6 @@
       "picture-one": "/buchanans-preview.png",
       "paragraph-one-title": "The Past",
       "paragraph-one": "Buchanan’s Whisky is one of the most famous Scotch whisky brands in the world. As one of the leaders in Scotch Whisky, they needed an informative and modern site. The original site was starting to feel outdated in both layout and design. As for site content, the original site featured information about the Buchanan’s family, their whiskies, whisky culture, and signature drinks. The site content was informative and engaging so it was decided that some site content would be re-used. The rebuilt site would feature the same engaging site content in a more concise and visually appealing way.",
-      "picture-two": "",
       "paragraph-two-title": "The Present",
       "paragraph-two": "I was very excited to start working on the build after receiving the designs. The new site featured sliders, recipe grids, and even a history timeline (that was sadly eventually scrapped). I ended up deciding that I would be using parts of the MERN tech stack. The client also emphasized good SEO so I decided on using NextJS. NextJS is a React framework that offers server-side rendering and easy SEO implementation for React applications. I have used NextJS before but have been using much more after seeing companies like Netflix, Twitch, and Hulu use the framework as well. Thanks to NextJS, I was able to focus on coding features rather than configuration. Server-side rendering was working right out of the box and components like ‘next/head’ made writing SEO much easier. Outside of NextJS, I decided to use SCSS for styling and MobX for state management."
     }
@@ -22,7 +38,6 @@
       "picture-one": "/jointhepact-preview.png",
       "paragraph-one-title": "Mission",
       "paragraph-one": "Join the Pact is a global mission to reduce accidents and injuries caused by drunk driving. The site would feature information about the effects of alcohol and the consequences of driving impaired. Users who visit the site can pledge never to drink and drive. Their pledge is recorded and then displayed on a campaign total and an interactive map.I was very excited about taking on this project as I felt that I was working on something that would make a difference. There was also a decent amount of press/publicity around the campaign so I was ready for the challenge and exposure.",
-      "picture-two": "",
       "paragraph-two-title": "Technical Challenges",
       "paragraph-two": "The frontend of the site was relatively simple, but the backend was a little complex. Most of the technical design went into the database planning. It was important to have a strong database plan because this site was primarily about displaying the pledge data and getting new users to pledge. The client mentioned that they had a goal of around ~85 million pledges. After careful consideration and a lot of sandbox tests, the techstack that was decided on was SQL, Gulp, and Nunjucks. One of the client’s main requests was to have a streamlined way to add locales at any time. To accomplish this, a template was created and all site content/translations were stored in a JSON file. When the site would be built (using Gulp), each locale would be made using the content in the JSON file. Now, whenever the client wants to add a locale, it is as simple as adding the content to the JSON file and running the build command. One of the other requirements was creating a backend portal for the client where they are able to validate, edit, or enter pledges. I wish I could talk more about the backend portal (it was a large part of the project) but since it isn’t consumer facing I can’t say too much. This was one of my favorite projects and took up a lot of my time in 2019. As of writing, the site has 22 million pledges and over 20 locales."
     }
