@@ -11,10 +11,10 @@ const Index = () => {
         <title>Humza Mujib | Portfolio</title>
         <meta name="description" content="Humza Mujib is a Frontend Developer in the greater NY area. Visit his portfolio to see some of the projects he has worked on!" />
         <meta property="og:title" content="Humza Mujib | Portfolio"/>
-        <meta property="og:image" content="/portfolio-preview.png"/>
+        <meta property="og:image" content="/social-share.png"/>
         <meta property="og:description" content="Humza Mujib is a Frontend Developer in the greater NY area. Visit his portfolio to see some of the projects he has worked on!"/>
         <meta property="twitter:title" content="Humza Mujib | Portfolio"/>
-        <meta property="twitter:image" content="/portfolio-preview.png"/>
+        <meta property="twitter:image" content="/social-share.png"/>
         <meta property="twitter:description" content="Humza Mujib is a Frontend Developer in the greater NY area. Visit his portfolio to see some of the projects he has worked on!"/>
       </Head>
       <Container>

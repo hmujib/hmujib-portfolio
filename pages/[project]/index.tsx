@@ -64,10 +64,10 @@ const Project = (props) => {
         <title>Humza Mujib | {pageData.name}</title>
         <meta name="description" content={`Humza Mujib is a Frontend Developer in the greater NY area. Visit his portfolio to see some his work on "${pageData.name}"`} />
         <meta property="og:title" content={`Humza Mujib | ${pageData.name}`}/>
-        <meta property="og:image" content={pageData.article["picture-one"]}/>
+        <meta property="og:image" content="/social-share.png"/>
         <meta property="og:description" content={`Humza Mujib is a Frontend Developer in the greater NY area. Visit his portfolio to see some his work on "${pageData.name}"`}/>
         <meta property="twitter:title" content={`Humza Mujib | ${pageData.name}`}/>
-        <meta property="twitter:image" content={pageData.article["picture-one"]}/>
+        <meta property="twitter:image" content="/social-share.png"/>
         <meta property="twitter:description" content={`Humza Mujib is a Frontend Developer in the greater NY area. Visit his portfolio to see some his work on "${pageData.name}"`}/>
       </Head>
       <Container layout="homepage">
