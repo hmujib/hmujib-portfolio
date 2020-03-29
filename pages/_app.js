@@ -14,6 +14,11 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <link href='https://fonts.googleapis.com/css?family=Roboto&display=swap' rel='stylesheet'></link>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet"></link>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+        <link rel="manifest" href="/site.webmanifest"/>
+        <title>Humza Mujib | Portfolio</title>
       </Head>
       <ThemeProvider theme={theme}>
         <Component {...pageProps} />
