@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react'
+import Head from "next/head"
+import Link from 'next/link'
 import styled from 'styled-components'
 import data from '../../data/projects.json'
 
@@ -35,6 +37,14 @@ const ArticleText = styled.p`
   line-height: 2rem;
 `
 
+const HomeLink = styled(ArticleText)`
+  color: ${props => props.theme.blue};
+  text-decoration: underline;
+  &:hover {
+    cursor: pointer;
+  }
+`
+
 const Project = (props) => {
   let filteredData = data.find((project: any) => {
     if(project.slug === props.query) {
@@ -49,22 +59,36 @@ const Project = (props) => {
   })
 
   return (
-    <Container layout="homepage">
-      <ProjectTitle>{pageData.name}</ProjectTitle>
+    <>
+      <Head>
+        <title>Humza Mujib | {pageData.name}</title>
+        <meta name="description" content={`Humza Mujib is a Frontend Developer in the greater NY area. Visit his portfolio to see some his work on "${pageData.name}"`} />
+        <meta property="og:title" content={`Humza Mujib | ${pageData.name}`}/>
+        <meta property="og:image" content={pageData.article["picture-one"]}/>
+        <meta property="og:description" content={`Humza Mujib is a Frontend Developer in the greater NY area. Visit his portfolio to see some his work on "${pageData.name}"`}/>
+        <meta property="twitter:title" content={`Humza Mujib | ${pageData.name}`}/>
+        <meta property="twitter:image" content={pageData.article["picture-one"]}/>
+        <meta property="twitter:description" content={`Humza Mujib is a Frontend Developer in the greater NY area. Visit his portfolio to see some his work on "${pageData.name}"`}/>
+      </Head>
+      <Container layout="homepage">
+        <ProjectTitle>{pageData.name}</ProjectTitle>
 
-      {
-        Object.keys(pageData.article).map(element => {
-          if(element.includes("picture")) {
-            return <Picture key={element} src={pageData.article[element]}/>
-          } else if(element.includes("title")) {
-            return <ParagraphTitle key={element}>{pageData.article[element]}</ParagraphTitle>
-          } else {
-            return <ArticleText key={element}>{pageData.article[element]}</ArticleText>
-          }
-        })
-      }
-
-    </Container>
+        {
+          Object.keys(pageData.article).map(element => {
+            if(element.includes("picture")) {
+              return <Picture key={element} src={pageData.article[element]}/>
+            } else if(element.includes("title")) {
+              return <ParagraphTitle key={element}>{pageData.article[element]}</ParagraphTitle>
+            } else {
+              return <ArticleText key={element}>{pageData.article[element]}</ArticleText>
+            }
+          })
+        }
+        <Link href="/" as="/">
+          <HomeLink>Back to home</HomeLink>
+        </Link>
+      </Container>
+    </>
   )
 }
 
