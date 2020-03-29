@@ -64,11 +64,15 @@ const Project = (props) => {
         <title>Humza Mujib | {pageData.name}</title>
         <meta name="description" content={`Humza Mujib is a Frontend Developer in the greater NY area. Visit his portfolio to see some his work on "${pageData.name}"`} />
         <meta property="og:title" content={`Humza Mujib | ${pageData.name}`}/>
-        <meta property="og:image" content="/social-share.png"/>
+        <meta property="og:url" content={`https://hmujib.com/${pageData.slug}`}/>
+        <meta property="og:image" content="https://hmujib.com/social-share.png"/>
         <meta property="og:description" content={`Humza Mujib is a Frontend Developer in the greater NY area. Visit his portfolio to see some his work on "${pageData.name}"`}/>
+        <meta property="og:type" content="website"/>
         <meta property="twitter:title" content={`Humza Mujib | ${pageData.name}`}/>
-        <meta property="twitter:image" content="/social-share.png"/>
+        <meta property="twitter:url" content={`https://hmujib.com/${pageData.slug}`}/>
+        <meta property="twitter:image" content="https://hmujib.com/social-share.png"/>
         <meta property="twitter:description" content={`Humza Mujib is a Frontend Developer in the greater NY area. Visit his portfolio to see some his work on "${pageData.name}"`}/>
+        <meta property="twitter:type" content="website"/>
       </Head>
       <Container layout="homepage">
         <ProjectTitle>{pageData.name}</ProjectTitle>
