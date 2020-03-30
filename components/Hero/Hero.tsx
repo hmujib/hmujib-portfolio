@@ -22,7 +22,7 @@ const HorizontalLine = styled.div`
 const Hero = () => {
   return (
     <Fragment>
-      <HeroText>Hi, I'm Humza.</HeroText>
+      <HeroText>Hi, I'm Humza</HeroText>
       <HeroText>Front End <BlueText>Developer</BlueText>.</HeroText>
       <SocialIcons />
       <HorizontalLine />
