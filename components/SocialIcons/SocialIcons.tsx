@@ -27,7 +27,7 @@ const SocialIcons = () => {
     <SocialIconContainer>
       <SocialIconLink href='https://www.linkedin.com/in/humza-mujib-b14361165/' target='_blank'><SocialIcon src='/linkedin-icon.png' /></SocialIconLink>
       <SocialIconLink href='https://github.com/hmujib' target='_blank'><SocialIcon src='/github-icon.png' /></SocialIconLink>
-      <SocialIconLink data-tip="Grab a resume!" href='/hmujib-resume.pdf' target='_blank'><ReactTooltip effect="solid" place="bottom" /><SocialIcon src='/resume-icon.png' /></SocialIconLink>
+      <SocialIconLink data-tip="Grab a resume!" href='/hmujib-resume.pdf' target='_blank'><ReactTooltip type="dark" effect="solid" place="bottom" /><SocialIcon src='/resume-icon.png' /></SocialIconLink>
     </SocialIconContainer>
   )
 }
