@@ -1,6 +1,5 @@
 import styled from 'styled-components'
-import Tooltip from 'react-power-tooltip'
-import { useState } from 'react'
+import ReactTooltip from 'react-tooltip'
 
 const SocialIconContainer = styled.div`
   width: auto;
@@ -24,27 +23,11 @@ const SocialIcon = styled.img`
 `
 
 const SocialIcons = () => {
-  const [show, updateShow] = useState(false)
-
-  const showTooltip = bool => {
-    updateShow(bool)
-  }
-
   return (
     <SocialIconContainer>
       <SocialIconLink href='https://www.linkedin.com/in/humza-mujib-b14361165/' target='_blank'><SocialIcon src='/linkedin-icon.png' /></SocialIconLink>
       <SocialIconLink href='https://github.com/hmujib' target='_blank'><SocialIcon src='/github-icon.png' /></SocialIconLink>
-      <SocialIconLink href='/hmujib-resume.pdf' target='_blank'
-        onMouseOver={() => showTooltip(true)} 
-        onMouseLeave={() => showTooltip(false)}>
-          <Tooltip 
-          show={show}
-          animation="bounce"
-          position="bottom center"
-          textBoxWidth="auto">
-            <span>Grab a resume!</span>
-          </Tooltip>
-      <SocialIcon src='/resume-icon.png' /></SocialIconLink>
+      <SocialIconLink data-tip="Grab a resume!" href='/hmujib-resume.pdf' target='_blank'><ReactTooltip effect="solid" place="bottom" /><SocialIcon src='/resume-icon.png' /></SocialIconLink>
     </SocialIconContainer>
   )
 }
