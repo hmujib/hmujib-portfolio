@@ -4,6 +4,7 @@
     "details": "Personal - 2020",
     "previewImage": "portfolio-preview.png",
     "slug": "portfolio",
+    "github": "true",
     "article": {
       "picture-one": "/portfolio-preview.png",
       "paragraph-one-title": "Why?",

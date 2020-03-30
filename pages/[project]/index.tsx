@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
-import Head from "next/head"
+import Head from 'next/head'
 import Link from 'next/link'
 import styled from 'styled-components'
 import data from '../../data/projects.json'
 
-import Container from "../../components/Container"
+import Container from '../../components/Container'
 import { GetServerSideProps } from 'next'
 
 
@@ -32,17 +32,22 @@ const Picture = styled.img`
 `
 
 const ArticleText = styled.p`
+  display: inline-block;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   line-height: 2rem;
 `
 
-const HomeLink = styled(ArticleText)`
+const StyledLink = styled(ArticleText)`
   color: ${props => props.theme.blue};
   text-decoration: underline;
   &:hover {
     cursor: pointer;
   }
+`
+
+const Anchor = styled.a`
+  text-decoration: none;
 `
 
 const Project = (props) => {
@@ -62,35 +67,35 @@ const Project = (props) => {
     <>
       <Head>
         <title>Humza Mujib | {pageData.name}</title>
-        <meta name="description" content={`Humza Mujib is a Frontend Developer in the greater NY area. Visit his portfolio to see some his work on "${pageData.name}"`} />
-        <meta property="og:title" content={`Humza Mujib | ${pageData.name}`}/>
-        <meta property="og:url" content={`https://hmujib.com/${pageData.slug}`}/>
-        <meta property="og:image" content="https://hmujib.com/social-share.png"/>
-        <meta property="og:description" content={`Humza Mujib is a Frontend Developer in the greater NY area. Visit his portfolio to see some his work on "${pageData.name}"`}/>
-        <meta property="og:type" content="website"/>
-        <meta property="twitter:title" content={`Humza Mujib | ${pageData.name}`}/>
-        <meta property="twitter:url" content={`https://hmujib.com/${pageData.slug}`}/>
-        <meta property="twitter:image" content="https://hmujib.com/social-share.png"/>
-        <meta property="twitter:description" content={`Humza Mujib is a Frontend Developer in the greater NY area. Visit his portfolio to see some his work on "${pageData.name}"`}/>
-        <meta property="twitter:type" content="website"/>
+        <meta name='description' content={`Humza Mujib is a Frontend Developer in the greater NY area. Visit his portfolio to see some his work on '${pageData.name}'`} />
+        <meta property='og:title' content={`Humza Mujib | ${pageData.name}`}/>
+        <meta property='og:url' content={`https://hmujib.com/${pageData.slug}`}/>
+        <meta property='og:image' content='https://hmujib.com/social-share.png'/>
+        <meta property='og:description' content={`Humza Mujib is a Frontend Developer in the greater NY area. Visit his portfolio to see some his work on '${pageData.name}'`}/>
+        <meta property='og:type' content='website'/>
+        <meta property='twitter:title' content={`Humza Mujib | ${pageData.name}`}/>
+        <meta property='twitter:url' content={`https://hmujib.com/${pageData.slug}`}/>
+        <meta property='twitter:image' content='https://hmujib.com/social-share.png'/>
+        <meta property='twitter:description' content={`Humza Mujib is a Frontend Developer in the greater NY area. Visit his portfolio to see some his work on '${pageData.name}'`}/>
+        <meta property='twitter:type' content='website'/>
       </Head>
-      <Container layout="homepage">
+      <Container layout='homepage'>
         <ProjectTitle>{pageData.name}</ProjectTitle>
 
         {
           Object.keys(pageData.article).map(element => {
-            if(element.includes("picture")) {
+            if(element.includes('picture')) {
               return <Picture key={element} src={pageData.article[element]}/>
-            } else if(element.includes("title")) {
+            } else if(element.includes('title')) {
               return <ParagraphTitle key={element}>{pageData.article[element]}</ParagraphTitle>
             } else {
               return <ArticleText key={element}>{pageData.article[element]}</ArticleText>
             }
           })
         }
-        <Link href="/" as="/">
-          <HomeLink>Back to home</HomeLink>
-        </Link>
+        {
+          pageData.github ? <><Anchor href="https://github.com/hmujib/hmujib-portfolio"><StyledLink>View on Github</StyledLink></Anchor> <ArticleText> | </ArticleText> <Link href="/" as="/"><StyledLink href="/">Home</StyledLink></Link></> : <Link href="/" as="/"><StyledLink href="/">Home</StyledLink></Link>
+        }
       </Container>
     </>
   )

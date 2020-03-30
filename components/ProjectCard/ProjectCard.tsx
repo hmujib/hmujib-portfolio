@@ -34,7 +34,7 @@ const ProjectTitle = styled(StyledText)`
   font-size: 2rem;
   letter-spacing: -2px;
   cursor: pointer;
-
+  color: black;
   &:hover {
     color: ${props => props.theme.blue};
     transition: .2s;
@@ -69,13 +69,13 @@ const ProjectCard = (props: Props) => {
     <ProjectContainer>
       <Panel>
         <Link href="/[project]" as={`/${props.slug}`}>
-          <ProjectTitle>{props.projectTitle}</ProjectTitle>
+          <a><ProjectTitle>{props.projectTitle}</ProjectTitle></a>
         </Link>
         <ProjectDetails>{props.projectDetails}</ProjectDetails>
       </Panel>
       <Panel>
         <Link href="/[project]" as={`/${props.slug}`}>
-          <ProjectImage src={props.projectImage} />
+          <a><ProjectImage src={props.projectImage} /></a>
         </Link>
       </Panel>
     </ProjectContainer>
