@@ -27,7 +27,7 @@ const ParagraphTitle = styled.h3`
 
 const Picture = styled.img`
   width: 100%;
-  height: 600px;
+  height: auto;
   border: 0;
 `
 
