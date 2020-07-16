@@ -62,19 +62,20 @@ interface Props {
   projectDetails: string
   projectImage: string
   slug: string
+  url: string
 }
 
 const ProjectCard = (props: Props) => {
+  const slug = <Link href="/[project]" as={`/${props.slug}`}><a><ProjectTitle>{props.projectTitle}</ProjectTitle></a></Link>
+  const noSlug = <Link href={props.url}><a><ProjectTitle>{props.projectTitle}</ProjectTitle></a></Link>
   return (
     <ProjectContainer>
       <Panel>
-        <Link href="/[project]" as={`/${props.slug}`}>
-          <a><ProjectTitle>{props.projectTitle}</ProjectTitle></a>
-        </Link>
+        {props.slug ? slug : noSlug }
         <ProjectDetails>{props.projectDetails}</ProjectDetails>
       </Panel>
       <Panel>
-        <Link href="/[project]" as={`/${props.slug}`}>
+        <Link href={props.url ? props.url : props.slug}>
           <a><ProjectImage src={props.projectImage} /></a>
         </Link>
       </Panel>

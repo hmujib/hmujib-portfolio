@@ -31,7 +31,8 @@ const Index = () => {
               projectTitle={project.name}
               projectDetails={project.details}
               projectImage={project.previewImage} 
-              slug={project.slug} />
+              slug={project.slug}
+              url={project.link} />
           )
         })}
 

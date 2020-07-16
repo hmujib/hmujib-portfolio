@@ -1,5 +1,17 @@
 [
   {
+    "name": "Smirnoff",
+    "details": "Client - 2019/2020",
+    "previewImage": "/smirnoff-preview.png",
+    "link": "https://www.smirnoff.com/en-us/"
+  },
+  {
+    "name": "Don Julio",
+    "details": "Client - 2019/2020",
+    "previewImage": "/donjulio-preview.jpg",
+    "link": "https://www.donjulio.com/en-us/"
+  },
+  {
     "name": "Portfolio",
     "details": "Personal - 2020",
     "previewImage": "portfolio-preview.png",
@@ -22,6 +34,7 @@
     "details": "Client - 2020",
     "previewImage": "/buchanans-preview.png",
     "slug": "buchanans-rebuild",
+    "link":"https://www.buchananswhisky.com/en-us/",
     "article": {
       "picture-one": "/buchanans-preview.png",
       "paragraph-one-title": "The Past",
@@ -37,10 +50,11 @@
     "slug": "jointhepact",
     "article": {
       "picture-one": "/jointhepact-preview.png",
-      "paragraph-one-title": "Mission",
-      "paragraph-one": "Join the Pact is a global mission to reduce accidents and injuries caused by drunk driving. The site would feature information about the effects of alcohol and the consequences of driving impaired. Users who visit the site can pledge never to drink and drive. Their pledge is recorded and then displayed on a campaign total and an interactive map.I was very excited about taking on this project as I felt that I was working on something that would make a difference. There was also a decent amount of press/publicity around the campaign so I was ready for the challenge and exposure.",
-      "paragraph-two-title": "Technical Challenges",
-      "paragraph-two": "The frontend of the site was relatively simple, but the backend was a little complex. Most of the technical design went into the database planning. It was important to have a strong database plan because this site was primarily about displaying the pledge data and getting new users to pledge. The client mentioned that they had a goal of around ~85 million pledges. After careful consideration and a lot of sandbox tests, the techstack that was decided on was SQL, Gulp, and Nunjucks. One of the client’s main requests was to have a streamlined way to add locales at any time. To accomplish this, a template was created and all site content/translations were stored in a JSON file. When the site would be built (using Gulp), each locale would be made using the content in the JSON file. Now, whenever the client wants to add a locale, it is as simple as adding the content to the JSON file and running the build command. One of the other requirements was creating a backend portal for the client where they are able to validate, edit, or enter pledges. I wish I could talk more about the backend portal (it was a large part of the project) but since it isn’t consumer facing I can’t say too much. This was one of my favorite projects and took up a lot of my time in 2019. As of writing, the site has 22 million pledges and over 20 locales."
+      "paragraph-one": "This campaign has been ended by the client.",
+      "paragraph-two-title": "Mission",
+      "paragraph-two": "Join the Pact is a global mission to reduce accidents and injuries caused by drunk driving. The site would feature information about the effects of alcohol and the consequences of driving impaired. Users who visit the site can pledge never to drink and drive. Their pledge is recorded and then displayed on a campaign total and an interactive map.I was very excited about taking on this project as I felt that I was working on something that would make a difference. There was also a decent amount of press/publicity around the campaign so I was ready for the challenge and exposure.",
+      "paragraph-three-title": "Technical Challenges",
+      "paragraph-three": "The frontend of the site was relatively simple, but the backend was a little complex. Most of the technical design went into the database planning. It was important to have a strong database plan because this site was primarily about displaying the pledge data and getting new users to pledge. The client mentioned that they had a goal of around ~85 million pledges. After careful consideration and a lot of sandbox tests, the techstack that was decided on was SQL, Gulp, and Nunjucks. One of the client’s main requests was to have a streamlined way to add locales at any time. To accomplish this, a template was created and all site content/translations were stored in a JSON file. When the site would be built (using Gulp), each locale would be made using the content in the JSON file. Now, whenever the client wants to add a locale, it is as simple as adding the content to the JSON file and running the build command. One of the other requirements was creating a backend portal for the client where they are able to validate, edit, or enter pledges. I wish I could talk more about the backend portal (it was a large part of the project) but since it isn’t consumer facing I can’t say too much. This was one of my favorite projects and took up a lot of my time in 2019. As of writing, the site has 22 million pledges and over 20 locales."
     }
   }
 ]
